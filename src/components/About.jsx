@@ -1,10 +1,10 @@
 import React from "react";
-import aboutImg from "../assets/images/about.png";
+import aboutImg from "../assets/images/about-img.png";
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Years experience", count: "03" },
+    { text: "Completed Projects", count: "10" },
+    { text: "Companies Work", count: "02" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -16,11 +16,16 @@ const About = () => {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+              <p className="text-justify leading-7 w-11/12 mx-auto text-sm">
+              I am a passionate Frontend Developer with expertise in 
+              creating pixel-perfect, responsive web pages using clean code. 
+              I focus on delivering seamless user experiences by integrating 
+              well-developed functionality. I utilize tools like React-query 
+              and Axios to build fully functional and visually appealing user 
+              interfaces that meet requirements. My attention to detail, responsive 
+              design skills, and clean coding practices ensure exceptional results. 
+              I continuously learn and stay up-to-date with the latest web development 
+              trends to enhance my skills and provide the best possible outcomes.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
@@ -35,7 +40,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="./src/assets/Code_a_program.pdf" download>
+              <a href="./src/assets/Daniel_Benita-CV.pdf" download>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>
@@ -45,7 +50,7 @@ const About = () => {
               <img
                 src={aboutImg}
                 alt=""
-                className="w-full object-cover bg-cyan-600 rounded-xl"
+                className="h-[28rem] object-contain bg-cyan-600 rounded-xl"
               />
             </div>
           </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
+import project2 from "../assets/images/project-2.png";
+import project3 from "../assets/images/project-3.png";
+import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import project_person from "../assets/images/projects-2.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -14,34 +14,34 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      name: "Hospital App",
+      github_link: "https://github.com/Swan-7/sycare_hospital-website-clone",
+      live_link: "https://preeminent-gnome-7b161e.netlify.app/",
     },
     {
       img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      name: "Eplaza software",
+      github_link: "https://github.com/escltd/eplaza-uiqrmenu",
+      live_link: "https://eplaza.cloud/#/",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      name: "Airbnb clone",
+      github_link: "https://github.com/Swan-7/airbnb-clone",
+      live_link: "https://airbnb-clone-assessment.netlify.app/",
     },
     {
       img: project4,
-      name: "React Nav",
+      name: "Revive Haircare",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        "#",
+      live_link: "http://www.revivehaircosmetics.com/",
     },
     {
       img: project5,
-      name: "Vue Country",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
+      name: "Bank App",
+      github_link: "https://github.com/Swan-7/sycare_hospital-website-clone",
+      live_link: "https://deft-starship-cb7629.netlify.app/",
     },
   ];
   return (
@@ -50,7 +50,7 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-400 mt-3 text-lg">My recent works</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -99,7 +99,7 @@ const Project = () => {
           </Swiper>
         </div>
         <div className="lg:block hidden">
-          <img src={project_person} alt="" />
+          <img src={project_person} alt="" className="w-1/3 absolute bottom-0 top-24 -right-2"/>
         </div>
       </div>
     </section>
