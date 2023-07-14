@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../assets/images/logo.png"
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -24,18 +25,17 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <div className="mx-7">
-          <h4 className="text-4xl uppercase font-bold">
-            S<span className="text-cyan-600">wa</span>n
-          </h4>
+          <img src={logo} alt="" className="w-[7%] absolute -top-2 left-4 opacity-80"/>
+          <h4 className="text-gray-800 font-bold absolute top-7 left-[5.3rem] text-lg">enita</h4>
         </div>
         <div
           className={` ${
-            sticky ? "md:bg-white/0 bg-white" : "bg-white"
-          } text-gray-900 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
+            sticky ? "md:bg-stone-100/0 bg-stone-100" : "bg-stone-100"
+          } text-gray-600 md:block hidden px-7 py-2 font-medium  rounded-bl-full`}
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
-              <li key={i} className="px-6 hover:text-cyan-600">
+              <li key={i} className="px-6 hover:text-[#A45C40]">
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}

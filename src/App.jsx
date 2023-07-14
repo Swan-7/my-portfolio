@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Bot from "./components/Bot";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css' 
 
 const App = () => {
   return (
@@ -16,7 +18,7 @@ const App = () => {
       <Bot />
       <Hero />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <Hireme />
       <Project />
       <Contact />

@@ -45,12 +45,12 @@ const Project = () => {
     },
   ];
   return (
-    <section id="projects" className="py-10 text-white">
+    <section id="projects" className="py-10 text-stone-100">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
-          My <span className="text-cyan-600">Projects</span>
+          My <span className="text-[#A45C40]">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My recent works</p>
+        <p className="text-gray-600 mt-3 text-lg">My recent works</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -74,21 +74,21 @@ const Project = () => {
           >
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
-                <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
+                <div className="h-fit w-full p-4 bg-[#A45C40] rounded-xl">
                   <img src={project_info.img} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
                     <a
                       href={project_info.github_link}
                       target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      className="text-[#A45C40] bg-[#ECD1C2] px-2 py-1 inline-block rounded-lg"
                     >
                       Github
                     </a>
                     <a
                       href={project_info.live_link}
                       target="_blank"
-                      className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                      className="text-[#A45C40] bg-[#ECD1C2] px-2 py-1 inline-block rounded-lg"
                     >
                       Live Demo
                     </a>
@@ -99,7 +99,7 @@ const Project = () => {
           </Swiper>
         </div>
         <div className="lg:block hidden">
-          <img src={project_person} alt="" className="w-1/3 absolute bottom-0 top-24 -right-2"/>
+          <img src={project_person} alt="" className="w-1/3 absolute bottom-0 top-60 -right-2"/>
         </div>
       </div>
     </section>
