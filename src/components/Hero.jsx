@@ -12,7 +12,7 @@ const Hero = () => {
       case 'logo-linkedin':
         return 'https://www.linkedin.com/in/swan-benitadaniel/';
       case 'logo-github':
-        return 'https://github.com/Swan-7';
+        return 'https://github.com/Swan-7/my-portfolio';
       case 'mail':
         return 'mailto:benitadaniel.dev@gmail.com';
     }
