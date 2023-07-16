@@ -11,11 +11,11 @@ body {
   @apply box-border bg-[#ECD1C2] text-[#332623];
 }
 .btn-primary {
-  @apply bg-[#A45C40] font-semibold text-stone-100 md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+  @apply bg-[#A45C40] font-semibold text-stone-100 md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 hover:shadow-xl;
 }
 
 .btn-secondary {
-  @apply font-semibold md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10 text-[#A45C40] bg-[#ECD1C2];
+  @apply font-semibold md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2 mt-10 text-[#A45C40] bg-[#ECD1C2] hover:shadow-xl;
 }
 
 .aboutImg::after {

@@ -17,7 +17,7 @@ const Hireme = () => {
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6 text-sm">
             With a proven track record in delivering high-quality projects, I bring expertise in modern web development frameworks and a passion for crafting efficient and user-friendly applications. I thrive in collaborative environments, valuing open communication and teamwork. Leveraging my technical skills, attention to detail, and problem-solving abilities, I am committed to delivering impactful solutions. Let's join forces to elevate your projects and optimize your team's success.
           </p>
-          <button className="btn-secondary">Say Hello</button>
+          <button className="btn-secondary"><a href="#contact">Say Hello</a></button>
         </div>
         <img
           src={hireMe}

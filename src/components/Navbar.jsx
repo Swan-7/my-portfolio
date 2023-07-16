@@ -23,11 +23,14 @@ const Navbar = () => {
         sticky ? "bg-white/60  text-gray-900" : "text-white"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between relative">
         <div className="mx-7">
-          <img src={logo} alt="" className="w-[7%] absolute -top-2 left-4 opacity-80"/>
-          <h4 className="text-gray-800 font-bold absolute top-7 left-[5.3rem] text-lg">enita</h4>
-          <h4 className="text-gray-800 font-bold absolute top-7 left-[8.3rem] text-lg">_Daniel</h4>
+          <img src={logo} alt="" className={` ${
+            sticky ? "hidden" : "block"
+          } md:w-[7%] w-16 absolute top-0 left-0.5 opacity-80`}/>
+          <h4  className={` ${
+            sticky ? "2xl:hidden" : "lg:block"
+          } text-gray-800 font-bold absolute top-[2.3rem] xl:top-10 2xl:top-[5.8rem] left-[4.3rem] xl:left-[4.8rem] 2xl:left-[8.7rem] text-lg 2xl:text-3xl hidden `}>enita_Daniel</h4>
         </div>
         <div
           className={` ${

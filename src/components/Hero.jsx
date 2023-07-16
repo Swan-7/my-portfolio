@@ -38,7 +38,7 @@ const Hero = () => {
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
             Frontend Developer
           </h4>
-          <button className="btn-primary mt-8" onClick={`mailto:benitadaniel.dev@gmail.com`}>Contact Me</button>
+          <button className="btn-primary mt-8" onClick={`mailto:benitadaniel.dev@gmail.com`}><a href="#contact">Contact Me</a></button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon) => (
               <div

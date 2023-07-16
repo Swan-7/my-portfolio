@@ -4,49 +4,69 @@ const Skills = () => {
   const skills = [
     {
       logo: "logo-react",
-      level: "Advanced",
+      name: "React",
       count: 86,
     },
     {
       logo: "logo-sass",
-      level: "Expert",
+      name: "Scss",
       count: 90,
     },
     {
       logo: "logo-vue",
-      level: "Advanced",
-      count: 80,
+      name: "Vue",
+      count: 70,
+    },
+    {
+      logo: "logo-github",
+      name: "Git",
+      count: 85,
+    },
+    {
+      logo: "cube",
+      name: "Material-UI",
+      count: 66,
+    },
+    {
+      logo: "logo-css3",
+      name: "Css3",
+      count: 90,
+    },
+    {
+      logo: "logo-npm",
+      name: "NPM",
+      count: 85,
     },
     {
       logo: "logo-nodejs",
-      level: "Intermediate",
-      count: 80,
+      name: "Javascript",
+      count: 60,
     },
   ];
   return (
-    <section id="skills" className="py-10 bg-[#A45C40] relative">
-      <div className="mt-8 text-gray-100 text-center">
-        <h3 className="text-4xl font-semibold">
-          My <span className="text-cyan-600">Skills</span>
+    <section id="skills" className="py-16  relative w-full">
+      <div className="mt-8 text-[#A45C40] text-center">
+        <h3 className="text-4xl font-semibold text-stone-100">
+          My <span className="text-[#A45C40]">Skills</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
+        <p className="text-gray-600 mt-3 text-lg">My Frameworks</p>
+        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap w-[60%] mx-auto">
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-[#A45C40] p-10 rounded-xl"
+              className="border-2 group border-[#A45C40] relative pt-3 min-w-[8rem] max-w-[12rem] p-1 rounded-xl shadow-xl"
             >
               <div
                 style={{
-                  background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
+                  background: `conic-gradient(rgb(164, 92, 64) ${skill.count}%,#ddd ${skill.count}%)`,
                 }}
-                className="w-32 h-32 flex items-center justify-center rounded-full"
+                className="w-[4.7rem] h-[4.7rem] flex items-center justify-center rounded-full mx-auto"
               >
-                <div className="text-6xl w-28 h-28 bg-[#A45C40] rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                <div className="text-5xl w-16 h-16 bg-stone-200 rounded-full flex items-center justify-center group-hover:text-[#A45C40]">
                   <ion-icon name={skill.logo}></ion-icon>
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              <p className="text-md font-semibold mt-1">{skill.name}</p>
             </div>
           ))}
         </div>
